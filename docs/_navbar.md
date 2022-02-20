@@ -1,4 +1,6 @@
 <!-- 自定义导航栏 -->
+- [主页](/)
 
-* [En](/)
-* [chinese](/zh-cn/)
+- Translations
+    - [:cn: 中文](zh-cn/)
+    
