@@ -3,8 +3,10 @@
 - 指南
     - [简介](zh-cn/README.md)
 
+- git
+    - [git命令学习](zh-cn/git/git.md)
+    - [git分支命令学习](zh-cn/git/gitfz.md)
 - 短视频去水印类
-    - [聚合短视频无水印解析](zh-cn/video_vm/jh/README.md)
     - [抖音无水印解析（含极速版）](zh-cn/video_vm/dy/README.md)
     - [抖音火山版无水印解析](zh-cn/video_vm/hs/README.md)
     - [快手无水印解析](zh-cn/video_vm/ks/README.md)
@@ -16,8 +18,7 @@
     - [绿洲无水印解析](zh-cn/video_vm/lz/README.md)
 
 - 图集去水印类
-    - [聚合短视频无水印解析](zh-cn/images_vm/jh/README.md)
     - [抖音无水印解析（含极速版）](zh-cn/images_vm/dy/README.md)
     - [快手无水印解析](zh-cn/images_vm/ks/README.md)
-    - [美图秀秀无水印解析](zh-cn/images_vm/mtxx/README.md)
     - [绿洲无水印解析](zh-cn/images_vm/lz/README.md)
+    - [美图秀秀无水印解析](zh-cn/images_vm/mtxx/README.md)

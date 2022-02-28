@@ -10,7 +10,7 @@ http://lxmovie.vip/lz
 # 请求实例
 
 ```
-http://lxmovie.vip/lz?url=https://m.oasis.weibo.cn/v1/h5/share?sid=4737451002167563
+http://lxmovie.vip/lz?url=https://m.oasis.weibo.cn/v1/h5/share?sid=4738603966009645
 ```
 
 # 请求参数
@@ -23,13 +23,13 @@ http://lxmovie.vip/lz?url=https://m.oasis.weibo.cn/v1/h5/share?sid=4737451002167
 
 ```json
 {
-  "msg":"操作成功",
-  "code":0,
-  "data":{
-    "author":"舌甘木叔",
-    "type":"images",
-    "url":"http://f.video.weibocdn.com/o0/1SdJYcctlx07R06TJq2s01041200mRbX0E010.mp4?label=vertical_video_h5&template=720x1280.24.0&trans_finger=2cf6914e1e7bc17a87c3ed927bea12bd&ori=2&Expires=1645451651&ssig=4pBRa6%2BWui&KID=unistore,video",
-    "content":"你万圣节扮什么啊？我扮恶心的肌肉女"
+  msg: "操作成功",
+  code: 0,
+  data: {
+    author: "郭亢Kay",
+    type: "video",
+    url: "http://oasis.video.weibocdn.com/u2/xz7GWQikgx07TSFiGs6c010412003sMA0E012.mp4?label=mp4_720p&template=796x596.24.0&trans_finger=0dec003e4dad885964301ff5a1db7715&ori=2&Expires=1645692304&ssig=MMKFO4og%2B2&KID=unistore,video",
+    content: ""
   }
 }
 ```
@@ -39,9 +39,11 @@ http://lxmovie.vip/lz?url=https://m.oasis.weibo.cn/v1/h5/share?sid=4737451002167
 |字段名称       |字段说明         |类型            |必填            |备注     |
 | -------------|:--------------:|:--------------:|:--------------:| ------:|
 |cover|封面链接|string|N||
+|music|BGM|json|N||
 |author|作者|string|N||
 |type|图文/视频|string|Y||
 |url|视频链接|string|N||
+|content|标题|string|N||
 
 
 # 调用效果

@@ -10,7 +10,7 @@ http://lxmovie.vip/zy
 # 请求实例
 
 ```
-http://lxmovie.vip/zy?url=https://share.xiaochuankeji.cn/hybrid/share/post?pid=266827216&zy_to=applink&share_count=1&m=caf0f0bd79c8334b00d12f1ee04cfd4d&d=3ef201eef6020a5c4948d22736b7e944b8b64a5d5103b54e781ea0c18e9edc8b2ccf064ae1f3930fb02086e5b31295e6&app=zuiyou&recommend=r0&name=n0&title_type=t0
+http://lxmovie.vip/zy?url=https://share.xiaochuankeji.cn/hybrid/share/post?pid=250588154&zy_to=applink&share_count=1&m=2971da49d3b22f99c4e171f8f82715cd&d=3ef201eef6020a5c4948d22736b7e944b8b64a5d5103b54e781ea0c18e9edc8b2ccf064ae1f3930fb02086e5b31295e6&app=zuiyou&recommend=r0&name=n0&title_type=t0
 ```
 
 # 请求参数
@@ -23,14 +23,13 @@ http://lxmovie.vip/zy?url=https://share.xiaochuankeji.cn/hybrid/share/post?pid=2
 
 ```json
 {
-    "msg":"操作成功",
-    "code":0,
-    "data":{
-        "cover":"http://tbfile.izuiyou.com/img/frame/id/1817974536?w=540&xcdelogo=0",
-        "type":"video",
-        "url":"http://video.izuiyou.com/zyvqwz/264/6d/fb/3978-8a13-11ec-9894-00163e0e67b8",
-        "content":"深得真传"
-    }
+  msg: "操作成功",
+  code: 0,
+  data: {
+    type: "video",
+    url: "http://video.izuiyou.com/zyvqwz/5a/79/fc30-322b-11ec-a99f-00163e0e67b8",
+    content: "社 交 牛 A 症"
+  }
 }
 ```
 
@@ -39,6 +38,8 @@ http://lxmovie.vip/zy?url=https://share.xiaochuankeji.cn/hybrid/share/post?pid=2
 |字段名称       |字段说明         |类型            |必填            |备注     |
 | -------------|:--------------:|:--------------:|:--------------:| ------:|
 |cover|封面链接|string|N||
+|music|BGM|json|N||
+|author|作者|string|N||
 |type|图文/视频|string|Y||
 |url|视频链接|string|N||
 |content|标题|string|N||

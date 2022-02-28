@@ -10,7 +10,7 @@ http://lxmovie.vip/ks
 # 请求实例
 
 ```
-http://lxmovie.vip/ks?url=https://v.douyin.com/LsJQwyq/
+http://lxmovie.vip/ks?url=https://v.kuaishou.com/gKoTnR
 ```
 
 # 请求参数
@@ -22,17 +22,15 @@ http://lxmovie.vip/ks?url=https://v.douyin.com/LsJQwyq/
 # 返回数据
 
 ```json
-{"code":200,
- "msg":"解析成功",
- "data":{
-   "cover":"https://p6-sign.douyinpic.com/tos-cn-p-0015/e457e61f9e674205b35930ace2b1e789_1641551728~tplv-dy-360p.jpeg?x-expires=1646546400&x-signature=VwSUNrhjFERNE9U1JlDMRcBJKVs%3D&from=4257465056&s=&se=false&sh=&sc=&l=20220220144247010210057040107C5AEE&biz_tag=feed_cover",
-   "music":{
-     "author":"13z",
-     "url":"https://sf6-cdn-tos.douyinstatic.com/obj/ies-music/7011804161452854047.mp3"
-   },
-   "author":"米叮Z",
-   "type":"video",
-   "url":"https://aweme.snssdk.com/aweme/v1/play/?video_id=v0d00fg10000c7c1dlbc77u38e0bnet0&ratio=720p&line=0","content":"pk一下觉得上一条跟这个更喜欢哪个啊"
+{
+  msg: "操作成功",
+  code: 0,
+  data: {
+    cover: "https://p2.a.yximgs.com/upic/2022/01/13/16/BMjAyMjAxMTMxNjUwMTlfODQ2MDM2ODczXzY0NzkzNDUzMTY5XzFfMw==_B824260dc4bb617ede919605ee964e846.jpg?clientCacheKey=3x93rvg7t4aggfc.jpg&di=7ccf0917&bp=13380",
+    author: "小蚊崽🦟",
+    type: "video",
+    url: "https://alimov2.a.kwimgs.com/upic/2022/01/13/16/BMjAyMjAxMTMxNjUwMTlfODQ2MDM2ODczXzY0NzkzNDUzMTY5XzFfMw==_b_Bd11e2b26b70899845410a66fbef068a9.mp4?clientCacheKey=3x93rvg7t4aggfc_b.mp4&tt=b&di=7ccf0917&bp=13380",
+    content: "知道你不爱看，艾特你儿子来看"
   }
 }
 ```
