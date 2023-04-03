@@ -7,6 +7,23 @@
     - [git命令](zh-cn/git/git.md)
     - [git分支命令](zh-cn/git/gitfz.md)
     - [git远程仓库](zh-cn/git/gityc.md)
+- java
+  - mq
+    - [RabbitMq安装](zh-cn/java/rabbitMq_az.md)
+    - [RocketMq安装](zh-cn/java/RocketMq-01.md)
+    - [RocketMq案例](zh-cn/java/RocketMq-02.md)
+    - [RocketMq高级](zh-cn/java/RocketMq-03.md)
+  - Zookeeper
+    - [Zookeeper安装](zh-cn/java/ZooKeeper-01.md)
+    - [Zookeeper集群](zh-cn/java/Zookeeper-02.md)
+  - [Dubbo集群](zh-cn/java/dubbo-admin.md)
+- docker
+    - [Docker基础](zh-cn/docker/docker_jc.md)
+    - [Docker镜像发布到阿里云或私有云](zh-cn/docker/docker_al.md)
+    - [docker应用部署](zh-cn/docker/dockerRq.md)
+    - [dockerFile](zh-cn/docker/dokcer_file.md)
+    - [docker compose](zh-cn/docker/docker_Compose.md)
+    - [docker私有仓库](zh-cn/docker/docker_sy.md)
 
 [//]: # (- 短视频去水印类)
 
@@ -51,8 +68,7 @@
     - [Nginx配置实例](zh-cn/csdn/nginx_sl.md)
     - [Redis常用五大类型](zh-cn/csdn/redis_type.md)
     - [Redis，springBoot整合](zh-cn/csdn/redis_sringboot.md)
-    - [Docker基础](zh-cn/csdn/docker_jc.md)
-    - [Docker镜像发布到阿里云或私有云](zh-cn/csdn/docker_al.md)
+    
 
 - Bean加载方式
     - [bean的加载方式(一)](zh-cn/spring/bean1.md)
