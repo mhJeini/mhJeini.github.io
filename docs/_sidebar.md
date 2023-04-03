@@ -4,8 +4,9 @@
     - [简介](zh-cn/README.md)
 
 - git
-    - [git命令学习](zh-cn/git/git.md)
-    - [git分支命令学习](zh-cn/git/gitfz.md)
+    - [git命令](zh-cn/git/git.md)
+    - [git分支命令](zh-cn/git/gitfz.md)
+    - [git远程仓库](zh-cn/git/gityc.md)
 - 短视频去水印类
     - [聚合短视频无水印解析](zh-cn/video_vm/jh/README.md)
     - [抖音无水印解析（含极速版）](zh-cn/video_vm/dy/README.md)
