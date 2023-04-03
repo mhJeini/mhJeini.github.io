@@ -13,10 +13,13 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/pure.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
  
 </head>
 <body>
   <div id="app">Loading...</div>
+  <div id="gitalk-container"></div>
   <a class="to-top">Top</a>
   <script>
     window.$docsify = {
@@ -36,17 +39,22 @@
       // subMaxLevel: 0, // 生成目录的最大层级
       autoHeader: true,//同时设置 loadSidebar 和 autoHeader 后，可以根据 _sidebar.md 的内容自动为每个页面增加标题
       loadNavbar: true, //自定义导航栏
-      count:{  //字数统计
+      
+      //字数统计
+      count:{  
         countable:true,
         fontsize:'0.9em',
         color:'rgb(90,90,90)',
         language:'chinese'
       },
-      seaech: {
-        placeholder: '搜索',
-        noData: '找不到结果!',
-        depth: 3
-      },
+      // 完整配置参数
+      search: {
+              maxAge: 86400000,//过期时间,单位毫秒,默认一天
+              paths: [], // or 'auto'
+              placeholder: '🔍请输入搜索关键字',
+              noData: '没有搜到呦!',
+              depth:2
+        },
 
       footer: {
         copy: 'Copyright &copy; 2021 </span>',
@@ -70,11 +78,22 @@
         nextText: '下一章节',
         crossChapter: true,
         crossChapterText: true,
-      },
-
-      disqus: 'shortname'//Disqus评论系统支持
+      }
       
     }
+
+    var gitalk = new Gitalk({
+      clientID: '6084796675cd823aeb1e',
+      clientSecret: 'df78523b8765e4173ba2bf5db094bb56662b9a42 ',
+      repo: 'GitHub repo',
+      owner: 'GitHub repo owner',
+      admin: ['GitHub repo owner and collaborators, only these guys can initialize github issues'],
+      id: location.pathname,      // Ensure uniqueness and length less than 50
+      distractionFreeMode: false  // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
+    
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
@@ -110,6 +129,10 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
 
   <!-- Disqus评论系统支持 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/disqus.min.js"></script>
+  <!-- <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/disqus.min.js"></script> -->
+
+  <!-- gitalk评论 -->
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
 </body>
 </html>
