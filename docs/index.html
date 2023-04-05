@@ -10,42 +10,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/pure.css">
+    <link rel="stylesheet" href="style/docsify/lib/themes/vue.css">
+    <link rel="stylesheet" href="style/docsify/lib/themes/buble.css">
+    <link rel="stylesheet" href="style/docsify/lib/themes/pure.css">
 
+    <style>
+        /* 美化滚动条 */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+            background-color: #f5f5f5;
+        }
+
+        /*滚动条 阴影~圆角*/
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(128, 128, 128, 0.7);
+            border-radius: 10px;
+            background-color: #f5f5f5;
+        }
+
+        /*滑块 阴影~圆角*/
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(128, 128, 128, 0.7);
+            background-color: rgb(149, 147, 147);
+        }
+        /* 美化滚动条 */
+    </style>
 
 </head>
 <body>
 <div id="app">Loading...</div>
-<a class="to-top">Top</a>
 <script>
     window.$docsify = {
         name: '材峻博客',
         repo: '',
         homepage: 'README.md', //设置中文的README.md作为首页
         auto2top: true,//切换页面后是否自动跳转到页面顶部
-        // coverpage: true,//封面
+        coverpage: true,//封面
         mergeNavbar: true, // 小屏设备下合并导航栏到侧边栏
         alias: { // 定义路由别名，可以更自由的定义路由规则。 支持正则
             '/.*/_sidebar.md': '/_sidebar.md'//防止意外回退
         },
-
-
         loadSidebar: true,//加载自定义侧边栏
         // maxLevel: 1, // 默认情况下会抓取文档中所有标题渲染成目录，可配置最大支持渲染的标题层级。
-        subMaxLevel: 1, // 生成目录的最大层级
+        // subMaxLevel: 1, // 生成目录的最大层级
         autoHeader: true,//同时设置 loadSidebar 和 autoHeader 后，可以根据 _sidebar.md 的内容自动为每个页面增加标题
-        loadNavbar: true, //自定义导航栏
+        // loadNavbar: true, //自定义导航栏
 
         //字数统计
-        // count: {
-        //     countable: true,
-        //     fontsize: '0.9em',
-        //     color: 'rgb(90,90,90)',
-        //     language: 'chinese'
-        // },
-        // 完整配置参数
+        count: {
+            countable: true,
+            fontsize: '0.9em',
+            color: 'rgb(90,90,90)',
+            language: 'chinese'
+        },
+        // 搜索完整配置参数
         search: {
             maxAge: 86400000,//过期时间,单位毫秒,默认一天
             paths: [], // or 'auto'
@@ -53,64 +73,76 @@
             noData: '没有搜到呦!',
             depth: 2
         },
-
+        //页脚
         footer: {
-            copy: 'Copyright &copy; 2021 </span>',
-            auth: ' <strong>-判官-</strong>',
+            copy: 'Copyright &copy; 2021-2023 </span>',
+            auth: ' <strong>-材峻-</strong>',
             pre: '<hr/>',
             style: 'text-align: center;',
         },
-
+        //复制代码,可以按照中英文指定显示名称
         copyCode: {
-            buttonText: 'Copy',
-            errorText: 'Error',
-            successText: 'OK!'
+            buttonText: {
+                '/zh-cn/': '点击复制',
+                '/'      : '点击复制'
+            },
+            errorText: {
+                '/zh-cn/': '复制失败',
+                '/'      : '复制失败'
+            },
+            successText: {
+                '/zh-cn/': '复制成功',
+                '/'      : '复制成功'
+            }
         },
-
-        'flexible-alerts': {
-            style: 'flat'
-        },
-
+        //分页
         pagination: {
             previousText: '上一章节',
             nextText: '下一章节',
             crossChapter: true,
             crossChapterText: true,
-        }
+        },
+        // 回到顶部
+        scrollToTop: {
+            auto: true,
+            text: 'top',
+            right: 30,
+            bottom: 30,
+            // 偏移量，触发按钮
+            offset: 500,
+        },
 
     }
 
 </script>
 <!-- Docsify v4 -->
-<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+<script src="style/docsify/lib/docsify.min.js"></script>
 
 <!-- 字数统计 -->
-<!--<script src="//unpkg.com/docsify-count/dist/countable.js"></script>-->
+<script src="style/countable.js"></script>
 
 <!-- 代码高亮 -->
-<!--<script src="//unpkg.com/prismjs/components/prism-bash.js"></script>-->
-<!--<script src="//unpkg.com/prismjs/components/prism-java.js"></script>-->
-<!--<script src="//unpkg.com/prismjs/components/prism-sql.js"></script>-->
+<script src="style/prismjs/prism-bash.js"></script>
+<script src="style/prismjs/prism-java.js"></script>
+<script src="style/prismjs/prism-powershell.js"></script>
+<script src="style/prismjs/prism-sql.js"></script>
 
 <!-- 代码拷贝 -->
-<!--<script src="//unpkg.com/docsify-copy-code"></script>-->
+<script src="style/docsify-copy-code.min.js"></script>
 
 <!-- 全文搜索 -->
-<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+<script src="style/docsify/lib/plugins/search.min.js"></script>
 
 <!-- 文档页脚增强 -->
-<script src="//cdn.jsdelivr.net/npm/docsify-footer-enh/dist/docsify-footer.min.js"></script>
+<script src="style/docsify-footer-enh/dist/docsify-footer-enh.js"></script>
 
-<!-- 置顶插件 -->
-<script src="style/jquery-1.11.3.min.js"></script>
-<script src="style/jquery.toTop.min.js"></script>
-<script>
-    $('.to-top').toTop();
-</script>
+<!--回到顶部-->
+<script src="style/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script>
 
 <!-- 分页导航插件 -->
-<script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+<script src="style/docsify-pagination/dist/docsify-pagination.min.js"></script>
 
-
+<!-- 图片放大缩小支持-->
+<script src="style/zoom-image.min.js"></script>
 </body>
 </html>

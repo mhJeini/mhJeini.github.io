@@ -1,5 +1,5 @@
 <!-- 侧边栏 目录 -->
-- 指南
+- 首页
     - [简介](README.md)
 - git
     - [git命令](git/git.md)
