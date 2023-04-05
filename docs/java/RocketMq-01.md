@@ -236,7 +236,7 @@ sh bin/mqshutdown broker
 
 ### 3.3.3 服务器环境
 
-| **序号** | **IP**         | **角色**                 | **架构模式**    |
+| 序号 | IP         | 角色                 | 架构模式    |
 | -------- | -------------- | ------------------------ | --------------- |
 | 1        | 192.168.25.135 | nameserver、brokerserver | Master1、Slave2 |
 | 2        | 192.168.25.138 | nameserver、brokerserver | Master2、Slave1 |
