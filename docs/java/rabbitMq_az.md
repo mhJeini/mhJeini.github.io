@@ -47,14 +47,14 @@ strings /lib64/libc.so.6 | grep GLIBC
 - 下载rpm包
 
   ```shell
-wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x86_64/glibc-2.17-55.fc20/glibc-utils-2.17-55.el6.x86_64.rpm &
-wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x86_64/glibc-2.17-55.fc20/glibc-static-2.17-55.el6.x86_64.rpm &
-wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x86_64/glibc-2.17-55.fc20/glibc-2.17-55.el6.x86_64.rpm &
-wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x86_64/glibc-2.17-55.fc20/glibc-common-2.17-55.el6.x86_64.rpm &
-wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x86_64/glibc-2.17-55.fc20/glibc-devel-2.17-55.el6.x86_64.rpm &
-wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x86_64/glibc-2.17-55.fc20/glibc-headers-2.17-55.el6.x86_64.rpm &
-wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x86_64/glibc-2.17-55.fc20/nscd-2.17-55.el6.x86_64.rpm &
-```
+  wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x86_64/glibc-2.17-55.fc20/glibc-utils-2.17-55.el6.x86_64.rpm &
+  wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x86_64/glibc-2.17-55.fc20/glibc-static-2.17-55.el6.x86_64.rpm &
+  wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x86_64/glibc-2.17-55.fc20/glibc-2.17-55.el6.x86_64.rpm &
+  wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x86_64/glibc-2.17-55.fc20/glibc-common-2.17-55.el6.x86_64.rpm &
+  wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x86_64/glibc-2.17-55.fc20/glibc-devel-2.17-55.el6.x86_64.rpm &
+  wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x86_64/glibc-2.17-55.fc20/glibc-headers-2.17-55.el6.x86_64.rpm &
+  wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x86_64/glibc-2.17-55.fc20/nscd-2.17-55.el6.x86_64.rpm &
+  ```
 
 - 安装rpm包
 
@@ -67,16 +67,7 @@ wget http://copr-be.cloud.fedoraproject.org/results/mosquito/myrepo-el6/epel-6-x
   ```shell
   strings /lib64/libc.so.6 | grep GLIBC
   ```
-
-
-
-
-
-![1565528746057](../../img/java/rabbitmq/1565528746057.png)
-
-
-
-
+  ![1565528746057](../../img/java/rabbitmq/1565528746057.png)
 
 ## 3. 安装RabbitMQ
 
@@ -101,11 +92,6 @@ vim /usr/lib/rabbitmq/lib/rabbitmq_server-3.6.5/ebin/rabbit.app
 
 ```
 
-
-
-
-
-
 ## 5. 启动
 
 ```sh
@@ -114,9 +100,6 @@ service rabbitmq-server start # 启动服务
 service rabbitmq-server stop # 停止服务
 service rabbitmq-server restart # 重启服务
 ```
-
-
-
 - 设置配置文件
 
 ```shell
@@ -125,10 +108,6 @@ cd /usr/share/doc/rabbitmq-server-3.6.5/
 cp rabbitmq.config.example /etc/rabbitmq/rabbitmq.config
 
 ```
-
-
-
-
 
 ## 6. 配置虚拟主机及用户
 
