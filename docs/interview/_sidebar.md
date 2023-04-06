@@ -97,7 +97,7 @@
   - [Elasticsearch-03](interview/elasticsearch/elasticsearch-03.md)
   - [Elasticsearch-04](interview/elasticsearch/elasticsearch-04.md)
 - **Docker**
-  - [Docker-01](interview/docker/docker-01.md)
+  - [Docker-01](/interview/docker/docker-01.md)
   - [Docker-02](interview/docker/docker-02.md)
   - [Docker-03](interview/docker/docker-03.md)
 - **Zookeeper**
@@ -131,3 +131,6 @@
 - **Vue**
   - [Vue-01](interview/vue/vue-01.md)
   - [Vue-02](interview/vue/vue-02.md)
+- **项目管理**
+  - [Maven](interview/pm/maven.md)
+  - [Git](interview/pm/git.md)
