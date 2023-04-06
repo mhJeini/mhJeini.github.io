@@ -1,7 +1,7 @@
 <!-- 侧边栏 目录 -->
 
 - 指南
-    - [简介](README.md)
+    - [简介](/README.md)
 
 - git
     - [git命令](git/git.md)
@@ -24,43 +24,23 @@
     - [dockerFile](docker/dokcer_file.md)
     - [docker compose](docker/docker_Compose.md)
     - [docker私有仓库](docker/docker_sy.md)
-
-[//]: # (- 短视频去水印类)
-
-[//]: # (    - [聚合短视频无水印解析]&#40;/video_vm/jh/README.md&#41;)
-
-[//]: # (    - [抖音无水印解析（含极速版）]&#40;/video_vm/dy/README.md&#41;)
-
-[//]: # (    - [抖音火山版无水印解析]&#40;/video_vm/hs/README.md&#41;)
-
-[//]: # (    - [快手无水印解析]&#40;/video_vm/ks/README.md&#41;)
-
-[//]: # (    - [快手极速版无水印解析]&#40;/video_vm/ksjs/README.md&#41;)
-
-[//]: # (    - [皮皮虾无水印解析]&#40;/video_vm/ppx/README.md&#41;)
-
-[//]: # (    - [皮皮搞笑水印解析]&#40;/video_vm/ppgx/README.md&#41;)
-
-[//]: # (    - [微视无水印解析]&#40;/video_vm/ws/README.md&#41;)
-
-[//]: # (    - [最右无水印解析]&#40;/video_vm/zy/README.md&#41;)
-
-[//]: # (    - [绿洲无水印解析]&#40;/video_vm/lz/README.md&#41;)
-
-[//]: # ()
-[//]: # (- 图集去水印类)
-
-[//]: # (    - [聚合短视频无水印解析]&#40;/images_vm/jh/README.md&#41;)
-
-[//]: # (    - [抖音无水印解析（含极速版）]&#40;/images_vm/dy/README.md&#41;)
-
-[//]: # (    - [快手无水印解析]&#40;/images_vm/ks/README.md&#41;)
-
-[//]: # (    - [美图秀秀无水印解析]&#40;/images_vm/mtxx/README.md&#41;)
-
-[//]: # (    - [绿洲无水印解析]&#40;/images_vm/lz/README.md&#41;)
-
-
+- 短视频去水印类
+    - [聚合短视频无水印解析](video_vm/jh/README.md)
+    - [抖音无水印解析（含极速版）](video_vm/dy/README.md)
+    - [抖音火山版无水印解析](video_vm/hs/README.md)
+    - [快手无水印解析](video_vm/ks/README.md)
+    - [快手极速版无水印解析](video_vm/ksjs/README.md)
+    - [皮皮虾无水印解析](video_vm/ppx/README.md)
+    - [皮皮搞笑水印解析](video_vm/ppgx/README.md)
+    - [微视无水印解析](video_vm/ws/README.md)
+    - [最右无水印解析](video_vm/zy/README.md)
+    - [绿洲无水印解析](video_vm/lz/README.md)
+- 图集去水印类
+    - [聚合短视频无水印解析](images_vm/jh/README.md)
+    - [抖音无水印解析（含极速版）](images_vm/dy/README.md)
+    - [快手无水印解析](images_vm/ks/README.md)
+    - [美图秀秀无水印解析](images_vm/mtxx/README.md)
+    - [绿洲无水印解析](images_vm/lz/README.md)
 - CSDN
     - [Maven配置阿里云镜像](csdn/maven.md)
     - [Nginx常用命令](csdn/nginx_Ml.md)
@@ -68,9 +48,141 @@
     - [Nginx配置实例](csdn/nginx_sl.md)
     - [Redis常用五大类型](csdn/redis_type.md)
     - [Redis，springBoot整合](csdn/redis_sringboot.md)
-    
-
 - Bean加载方式
     - [bean的加载方式(一)](spring/bean1.md)
     - [bean的加载方式(二)](spring/bean2.md)
     - [bean的加载方式(三)](spring/bean3.md)
+- 面试
+  - Java基础
+    - [Java基础-01](interview/foundation/java-foundation-01.md)
+    - [Java基础-02](interview/foundation/java-foundation-02.md)
+    - [Java基础-03](interview/foundation/java-foundation-03.md)
+    - [Java基础-04](interview/foundation/java-foundation-04.md)
+    - [Java基础-05](interview/foundation/java-foundation-05.md)
+    - [Java基础-06](interview/foundation/java-foundation-06.md)
+    - [Java基础-07](interview/foundation/java-foundation-07.md)
+    - [Java基础-08](interview/foundation/java-foundation-08.md)
+  - Java集合
+    - [Java集合-01](interview/set/java-set-01.md)
+    - [Java集合-02](interview/set/java-set-02.md)
+    - [Java集合-03](interview/set/java-set-03.md)
+    - [Java集合-04](interview/set/java-set-04.md)
+  - Java并发
+    - [Java并发-01](interview/concurrency/java-concurrency-01.md)
+    - [Java并发-02](interview/concurrency/java-concurrency-02.md)
+    - [Java并发-03](interview/concurrency/java-concurrency-03.md)
+    - [Java并发-04](interview/concurrency/java-concurrency-04.md)
+    - [Java并发-05](interview/concurrency/java-concurrency-05.md)
+  - JVM
+    - [JVM-01](interview/JVM/java-jvm-01.md)
+    - [JVM-02](interview/JVM/java-jvm-02.md)
+    - [JVM-03](interview/JVM/java-jvm-03.md)
+    - [JVM-04](interview/JVM/java-jvm-04.md)
+    - [JVM-05](interview/JVM/java-jvm-05.md)
+  - Java Web
+    - [Java Web-01](interview/web/java-web-01.md) 
+    - [Java Web-02](interview/web/java-web-02.md) 
+    - [Java Web-03](interview/web/java-web-03.md) 
+    - [Java Web-04](interview/web/java-web-04.md) 
+    - [Java Web-05](interview/web/java-web-05.md) 
+  - 设计模式
+    - [设计模式-01](interview/designPattern/java-designPattern-01.md)
+    - [设计模式-02](interview/designPattern/java-designPattern-02.md)
+    - [设计模式-03](interview/designPattern/java-designPattern-03.md)
+    - [设计模式-04](interview/designPattern/java-designPattern-04.md)
+  - Spring
+    - [Spring-01](interview/spring/java-spring-01.md)
+    - [Spring-02](interview/spring/java-spring-02.md)
+    - [Spring-03](interview/spring/java-spring-03.md)
+    - [Spring-04](interview/spring/java-spring-04.md)
+  - Spring MVC
+    - [Spring MVC-01](interview/springmvc/java-springmvc-01.md)
+    - [Spring MVC-02](interview/springmvc/java-springmvc-02.md)
+  - Spring Boot
+    - [Spring Boot-01](interview/springboot/java-springboot-01.md)
+    - [Spring Boot-02](interview/springboot/java-springboot-02.md)
+    - [Spring Boot-03](interview/springboot/java-springboot-03.md)
+  - Spring Cloud
+    - [Spring Cloud-01](interview/springcloud/java-springcloud-01.md)
+    - [Spring Cloud-02](interview/springcloud/java-springcloud-02.md)
+  - Mybatis
+    - [Mybatis-01](interview/mybatis/java-mybatis-01.md)
+    - [Mybatis-02](interview/mybatis/java-mybatis-02.md)
+  - Kafka
+    - [Kafka-01](interview/kafka/java-kafka-01.md)
+    - [Kafka-02](interview/kafka/java-kafka-02.md)
+    - [Kafka-03](interview/kafka/java-kafka-03.md)
+  - Mysql
+    - [Mysql-01](interview/mysql/java-mysql-01.md)
+    - [Mysql-02](interview/mysql/java-mysql-02.md)
+    - [Mysql-03](interview/mysql/java-mysql-03.md)
+    - [Mysql-04](interview/mysql/java-mysql-04.md)
+    - [Mysql-05](interview/mysql/java-mysql-05.md)
+    - [Mysql-06](interview/mysql/java-mysql-06.md)
+  - Mq
+    - [Mq-01](interview/mq/mq-01.md)
+    - [Mq-02](interview/mq/mq-02.md)
+  - Http
+    - [Http-01](interview/http/http-01.md)
+    - [Http-02](interview/http/http-02.md)
+    - [Http-03](interview/http/http-03.md)
+  - Linux
+    - [Linux-01](interview/linux/linux-01.md)
+    - [Linux-02](interview/linux/linux-02.md)
+    - [Linux-03](interview/linux/linux-03.md)
+  - Dubbo
+    - [Dubbo-01](interview/dubbo/dubbo-01.md)
+    - [Dubbo-02](interview/dubbo/dubbo-02.md)
+    - [Dubbo-03](interview/dubbo/dubbo-03.md)
+  - Redis
+    - [Redis-01](interview/redis/redis-01.md)
+    - [Redis-02](interview/redis/redis-02.md)
+    - [Redis-03](interview/redis/redis-03.md)
+  - MongoDb
+    - [MongoDb-01](interview/mongodb/mongodb-01.md)
+    - [MongoDb-02](interview/mongodb/mongodb-02.md)
+    - [MongoDb-03](interview/mongodb/mongodb-03.md)
+    - [MongoDb-04](interview/mongodb/mongodb-04.md)
+  - Netty(网络通信)
+    - [Netty-01](interview/netty/netty-01.md)
+    - [Netty-02](interview/netty/netty-02.md)
+  - Elasticsearch(全文检索)
+    - [Elasticsearch-01](interview/elasticsearch/elasticsearch-01.md)
+    - [Elasticsearch-02](interview/elasticsearch/elasticsearch-02.md)
+    - [Elasticsearch-03](interview/elasticsearch/elasticsearch-03.md)
+    - [Elasticsearch-04](interview/elasticsearch/elasticsearch-04.md)
+  - Docker
+    - [Docker-01](interview/docker/docker-01.md)
+    - [Docker-02](interview/docker/docker-02.md)
+    - [Docker-03](interview/docker/docker-03.md)
+  - Zookeeper
+    - [Zookeeper-01](interview/zookeeper/zookeeper-01.md)
+    - [Zookeeper-02](interview/zookeeper/zookeeper-02.md)
+    - [Zookeeper-03](interview/zookeeper/zookeeper-03.md)
+  - Nginx
+    - [Nginx-01](interview/nginx/nginx-01.md)
+    - [Nginx-02](interview/nginx/nginx-02.md)
+  - Spark
+    - [Spark-01](interview/spark/spark-01.md)
+    - [Spark-02](interview/spark/spark-02.md)
+    - [Spark-03](interview/spark/spark-03.md)
+  - Flink
+    - [Flink-01](interview/flink/flink-01.md)
+    - [Flink-02](interview/flink/flink-02.md)
+    - [Flink-03](interview/flink/flink-03.md)
+  - Kubernetes
+    - [Kubernetes-01](interview/kubernetes/kubernetes-01.md)
+    - [Kubernetes-02](interview/kubernetes/kubernetes-02.md)
+    - [Kubernetes-03](interview/kubernetes/kubernetes-03.md)
+    - [Kubernetes-04](interview/kubernetes/kubernetes-04.md)
+    - [Kubernetes-05](interview/kubernetes/kubernetes-05.md)
+    - [Kubernetes-06](interview/kubernetes/kubernetes-06.md)
+  - Jenkins
+    - [Jenkins-01](interview/jenkins/jenkins-01.md)
+    - [Jenkins-02](interview/jenkins/jenkins-02.md)
+  - JavaScript
+    - [JavaScript-01](interview/javaScript/javaScript-01.md)
+    - [JavaScript-02](interview/javaScript/javaScript-02.md)
+  - Vue
+    - [Vue-01](interview/vue/vue-01.md)
+    - [Vue-02](interview/vue/vue-02.md)

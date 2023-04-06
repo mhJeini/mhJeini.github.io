@@ -1,11 +1,9 @@
 建于2022年2月20日
 
-首页地址：[http://lxmovie.vip](http://lxmovie.vip ':target=_blank')
+[http://mlxcj.com](http://mlxcj.com ':target=_blank')
 
-官方文档地址：[https://mhjeini.github.io/](https://mhjeini.github.io/ ':target=_blank')
+记录学习日志,收藏面试题
 
-## 响应参数
-
-`200` 请求/解析成功
-
-`201` 请求/解析失败
+- 2023.04.05
+  - 本地化js,防止访问不到cdn服务器
+  - 新增面试题库

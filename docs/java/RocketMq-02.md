@@ -4,7 +4,7 @@
 
 模拟电商网站购物场景中的【下单】和【支付】业务
 
-###1）下单
+ 1）下单
 
 ![](../../img/java/rocketmq/下单组件图.png)
 
@@ -17,7 +17,7 @@
 
 ------
 
-###2）支付
+ 2）支付
 
 ![](../../img/java/rocketmq/支付组件图.png)
 
@@ -86,11 +86,13 @@ mvn install -Dmaven.skip.test=true
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>2.0.1.RELEASE</version>
 </parent>
-
+```
+```xml
 <properties>
     <rocketmq-spring-boot-starter-version>2.0.3</rocketmq-spring-boot-starter-version>
 </properties>
-
+```
+```xml
 <dependencies>
     <dependency>
         <groupId>org.apache.rocketmq</groupId>
@@ -107,7 +109,6 @@ mvn install -Dmaven.skip.test=true
         <artifactId>spring-boot-starter-test</artifactId>
         <scope>test</scope>
     </dependency>
-
 </dependencies>
 ```
 
@@ -212,21 +213,21 @@ mvn install -Dmaven.skip.test=true
 
 5. 配置每一个 Zookeeper 的 dataDir（zoo.cfg） clientPort 分别为 2181 2182 2183
 
-   修改```/usr/local/zookeeper-cluster/zookeeper-1/conf/zoo.cfg```
+修改```/usr/local/zookeeper-cluster/zookeeper-1/conf/zoo.cfg```
 
 ```shell
 clientPort=2181
 dataDir=/usr/local/zookeeper-cluster/zookeeper-1/data
 ```
 
-​	修改/usr/local/zookeeper-cluster/zookeeper-2/conf/zoo.cfg
+修改/usr/local/zookeeper-cluster/zookeeper-2/conf/zoo.cfg
 
 ```shell
 clientPort=2182
 dataDir=/usr/local/zookeeper-cluster/zookeeper-2/data
 ```
 
-​	修改/usr/local/zookeeper-cluster/zookeeper-3/conf/zoo.cfg
+修改/usr/local/zookeeper-cluster/zookeeper-3/conf/zoo.cfg
 
 ```shell
 clientPort=2183
@@ -638,7 +639,7 @@ shop系统基于Maven进行项目管理
 
 使用Mybatis逆向工程针对数据表生成CURD持久层代码
 
-###2）代码导入
+### 2）代码导入
 
 * 将实体类导入到shop-pojo工程
 * 在服务层工程中导入对应的Mapper类和对应配置文件
@@ -684,7 +685,7 @@ public interface IOrderService {
 }
 ```
 
-###2）业务类实现
+### 2）业务类实现
 
 ```java
 @Slf4j
@@ -719,7 +720,7 @@ public class OrderServiceImpl implements IOrderService {
 }
 ```
 
-###3）校验订单
+### 3）校验订单
 
 ![](../../img/java/rocketmq/校验订单(2).png)
 
@@ -747,12 +748,11 @@ private void checkOrder(TradeOrder order) {
         if(order.getGoodsNumber()>=goods.getGoodsNumber()){
             CastException.cast(ShopCode.SHOP_GOODS_NUM_NOT_ENOUGH);
         }
-
         log.info("校验订单通过");
 }
 ```
 
-###4）生成预订单
+### 4）生成预订单
 
 ![](../../img/java/rocketmq/生成预订单.png)
 
@@ -833,7 +833,7 @@ private Long savePreOrder(TradeOrder order) {
 }
 ```
 
-###5）扣减库存
+### 5）扣减库存
 
 * 通过dubbo调用商品服务完成扣减库存
 
@@ -882,7 +882,7 @@ public Result reduceGoodsNum(TradeGoodsNumberLog goodsNumberLog) {
 }
 ```
 
-###6）扣减优惠券
+### 6）扣减优惠券
 
 * 通过dubbo完成扣减优惠券
 
@@ -926,7 +926,7 @@ public Result changeCouponStatus(TradeCoupon coupon) {
 }
 ```
 
-###7）扣减用户余额
+### 7）扣减用户余额
 
 * 通过用户服务完成扣减余额
 
@@ -1012,7 +1012,7 @@ public Result changeUserMoney(TradeUserMoneyLog userMoneyLog) {
 }
 ```
 
-###8）确认订单
+### 8）确认订单
 
 ```java
 private void updateOrderStatus(TradeOrder order) {
@@ -1422,13 +1422,13 @@ public class OrderTest {
 }
 ```
 
-###1）准备测试数据
+### 1）准备测试数据
 
 * 用户数据
 * 商品数据
 * 优惠券数据
 
-###2）测试下单成功流程
+### 2）测试下单成功流程
 
 ```java
 @Test    
@@ -1453,7 +1453,7 @@ public void add(){
 
 执行完毕后,查看数据库中用户的余额、优惠券数据，及订单的状态数据
 
-###3）测试下单失败流程
+### 3）测试下单失败流程
 
 代码同上。
 
