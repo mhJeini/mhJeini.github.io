@@ -235,15 +235,15 @@ public class BookController {
 
 ​	SpringBoot官网和Spring的官网是在一起的，都是  spring.io  。你可以通过项目一级一级的找到SpringBoot技术的介绍页，然后在页面中间部位找到如下内容
 
-<img src="img\image-20211122150444816.png" alt="image-20211122150444816" style="zoom: 67%;" />
+![image-20211122150444816](img\image-20211122150444816.png)
 
 **步骤①**：点击Spring Initializr后进入到创建SpringBoot程序的界面上，下面是输入信息的过程，和前面的一样，只是界面变了而已，根据自己的要求，在左侧选择对应信息和输入对应的信息即可
 
-<img src="img\image-20211122150608039.png" alt="image-20211122150608039"  />
+![image-20211122150608039](img\image-20211122150608039.png)
 
 **步骤②**：右侧的ADD DEPENDENCIES用于选择使用何种技术，和之前勾选的Spring WEB是在做同一件事，仅仅是界面不同而已，点击后打开网页版的技术选择界面
 
-<img src="img\image-20211122161257361.png" alt="image-20211122161257361" style="zoom:50%;" />
+![image-20211122161257361](img\image-20211122161257361.png)
 
 **步骤③**：所有信息设置完毕后，点击下面左侧按钮，生成一个文件包
 
@@ -259,21 +259,21 @@ public class BookController {
 
 ​	做到这里其实可以透漏一个小秘密，Idea工具中创建SpringBoot工程其实连接的就是SpringBoot的官网，走的就是这个过程，只不过Idea把界面给整合了一下，读取到了Spring官网给的信息，然后展示到了Idea的界面中而已，不信你可以看看下面这个步骤
 
-<img src="img\image-20211122162443035.png" alt="image-20211122162443035" style="zoom: 67%;" />
+![image-20211122162443035](img\image-20211122162443035.png)
 
 ​	上面描述了连接的网址，再看看SpringBoot官网创建工程的URL地址，是不是一样？
 
-<img src="C:\Users\itcast\AppData\Roaming\Typora\typora-user-images\image-20211122162820719.png" alt="image-20211122162820719"  />
+![image-20211122150608039](img\image-20211122150608039.png)
 
 **总结**
 
 1. 打开SpringBoot官网，选择Quickstart Your Project
 
-   <img src="img\image-20211122150444816.png" alt="image-20211122150444816" style="zoom: 67%;" />
+   ![image-20211122150444816](img\image-20211122150444816.png)
 
 2. 创建工程
 
-   <img src="img\image-20211122150608039.png" alt="image-20211122150608039"  />
+   ![image-20211122150608039](img\image-20211122150608039.png)
 
    并保存项目
 
@@ -325,7 +325,7 @@ public class BookController {
 
 **步骤①**：创建工程时，选择手工创建Maven工程
 
-<img src="img\image-20211122165341684.png" alt="image-20211122165341684" style="zoom:50%;" />
+![image-20211122165341684](img\image-20211122165341684.png)
 
 **步骤②**：参照标准SpringBoot工程的pom文件，书写自己的pom文件即可
 
@@ -407,11 +407,11 @@ public class Application {
 
 **步骤①**：打开设置，【Files】→【Settings】
 
-<img src="img\image-20211122173835517.png" alt="image-20211122173835517" style="zoom:80%;" />
+![image-20211122173835517](img\image-20211122173835517.png)
 
 **步骤②**：打开文件类型设置界面，【Editor】→【File Types】→【Ignored Files and Folders】，忽略文件或文件夹显示
 
-<img src="img\image-20211122174020028.png" alt="image-20211122174020028" style="zoom: 67%;" />
+![image-20211122174020028](img\image-20211122174020028.png)
 
 **步骤③**：添加你要隐藏的文件名称或文件夹名称，可以使用*号通配符，表示任意，设置完毕即可
 
@@ -1008,7 +1008,7 @@ name=itheima
 
 ​	这个格式肯定是不能颠覆的，那就尝试性的写就行了，改端口，写port。当你输入port后，神奇的事情就发生了，这玩意儿带提示，太好了
 
-<img src="img\image-20211123165719091.png" alt="image-20211123165719091" style="zoom:80%;" />
+![image-20211123165719091](img\image-20211123165719091.png)
 
 ​	根据提示敲回车，输入80端口，搞定
 
@@ -1211,7 +1211,7 @@ server:
 
 **步骤④**：选择添加配置文件，然后选中要作为配置文件的具体文件就OK了
 
-![image-20211126161145082](img\image-20211126161145082.png)<img src="img\image-20211126161156324.png" alt="image-20211126161156324" style="zoom:80%;" />
+![image-20211126161145082](img\image-20211126161145082.png)![image-20211126161156324](img\image-20211126161156324.png)
 
 ​	到这里就做完了，其实就是Idea的一个小功能
 
@@ -1317,7 +1317,7 @@ users2: [ { name:Tom , age:4 } , { name:Jerry , age:5 } ]	#对象数组缩略格
 
 ​	yaml中保存的单个数据，可以使用Spring中的注解直接读取，使用@Value可以读取单个数据，属性名引用方式：<font color="#ff0000"><b>${一级属性名.二级属性名……}</b></font>
 
-<img src="img\image-20211126180433356.png" alt="image-20211126180433356" style="zoom:80%;" />
+![image-20211126180433356](img\image-20211126180433356.png)
 
 ​	记得使用@Value注解时，要将该注入写在某一个指定的Spring管控的bean的属性名上方。现在就可以读取到对应的单一数据行了
 
@@ -1332,7 +1332,7 @@ users2: [ { name:Tom , age:4 } , { name:Jerry , age:5 } ]	#对象数组缩略格
 
 ​	读取单一数据可以解决读取数据的问题，但是如果定义的数据量过大，这么一个一个书写肯定会累死人的，SpringBoot提供了一个对象，能够把所有的数据都封装到这一个对象中，这个对象叫做Environment，使用自动装配注解可以将所有的yaml数据封装到这个对象中
 
-<img src="img\image-20211126180738569.png" alt="image-20211126180738569" style="zoom:80%;" />
+![image-20211126180738569](img\image-20211126180738569.png)
 
 ​	数据封装到了Environment对象中，获取属性时，通过Environment的接口操作进行，具体方法时getProperties（String），参数填写属性名即可
 
@@ -1349,11 +1349,11 @@ users2: [ { name:Tom , age:4 } , { name:Jerry , age:5 } ]	#对象数组缩略格
 
 ​	首先定义一个对象，并将该对象纳入Spring管控的范围，也就是定义成一个bean，然后使用注解@ConfigurationProperties指定该对象加载哪一组yaml中配置的信息。
 
-<img src="img\image-20211126181126382.png" alt="image-20211126181126382" style="zoom:80%;" />
+![image-20211126181126382](img\image-20211126181126382.png)
 
 ​	这个@ConfigurationProperties必须告诉他加载的数据前缀是什么，这样当前前缀下的所有属性就封装到这个对象中。记得数据属性名要与对象的变量名一一对应啊，不然没法封装。其实以后如果你要定义一组数据自己使用，就可以先写一个对象，然后定义好属性，下面到配置中根据这个格式书写即可。
 
-​	<img src="img\image-20211126181423432.png" alt="image-20211126181423432" style="zoom:80%;" />
+​	![image-20211126181423432](img\image-20211126181423432.png)
 
 ​	<font color="#f0f"><b>温馨提示</b></font>
 
@@ -1824,7 +1824,7 @@ public interface BookDao extends BaseMapper<Book> {
 
 ​	核心在于Dao接口继承了一个BaseMapper的接口，这个接口中帮助开发者预定了若干个常用的API接口，简化了通用API接口的开发工作。
 
-<img src="img\image-20211129100313919.png" alt="image-20211129100313919" style="zoom:80%;" />
+![image-20211129100313919](img\image-20211129100313919.png)
 
 ​	下面就可以写一个测试类进行测试了，此处省略。
 
@@ -1932,7 +1932,7 @@ spring:
 
 ​	注意观察，配置项中，在datasource下面并不是直接配置url这些属性的，而是先配置了一个druid节点，然后再配置的url这些东西。言外之意，url这个属性时druid下面的属性，那你能想到吗？除了这4个常规配置外，还有druid专用的其他配置。通过提示功能可以打开druid相关的配置查阅
 
-<img src="img\image-20211129112610729.png" alt="image-20211129112610729" style="zoom:80%;" />
+![image-20211129112610729](img\image-20211129112610729.png)
 
 ​	与druid相关的配置超过200条以上，这就告诉你，如果想做druid相关的配置，使用这种格式就可以了，这里就不展开描述了，太多了。
 
@@ -2001,11 +2001,11 @@ spring:
 
 ​	对于这个案例如果按照企业开发的形式进行应该制作后台微服务，前后端分离的开发。
 
-<img src="img\image-20211129114306062.png" alt="image-20211129114306062" style="zoom:80%;" />
+![image-20211129114306062](img\image-20211129114306062.png)
 
 我知道这个对初学的小伙伴要求太高了，咱们简化一下。后台做单体服务器，前端不使用前后端分离的制作了。
 
-<img src="img\image-20211129114328967.png" alt="image-20211129114328967" style="zoom:80%;" />
+![image-20211129114328967](img\image-20211129114328967.png)
 
 一个服务器即充当后台服务调用，又负责前端页面展示，降低学习的门槛。
 
@@ -2294,7 +2294,7 @@ JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6ca30b8a] will not be managed 
 
 ​	此处设置的是日志的显示形式，当前配置的是控制台输出，当然还可以由更多的选择，根据需求切换即可
 
-<img src="img\image-20211129143207295.png" alt="image-20211129143207295" style="zoom:80%;" />
+![image-20211129143207295](img\image-20211129143207295.png)
 
 
 
@@ -2772,11 +2772,11 @@ public class R {
 
 ​	表现层开发格式也需要转换一下
 
-<img src="img\image-20211129153301262.png" alt="image-20211129153301262" style="zoom:80%;" />
+![image-20211129153301262](img\image-20211129153301262.png)
 
-<img src="img\image-20211129153319052.png" alt="image-20211129153319052" style="zoom:80%;" />
+![image-20211129153319052](img\image-20211129153319052.png)
 
-<img src="img\image-20211129153332499.png" alt="image-20211129153332499" style="zoom:80%;" />
+![image-20211129153332499](img\image-20211129153332499.png)
 
 ​	结果这么一折腾，全格式统一，现在后端发送给前端的数据格式就统一了，免去了不少前端解析数据的麻烦。
 

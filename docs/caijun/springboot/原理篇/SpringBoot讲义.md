@@ -34,7 +34,7 @@ https://www.bilibili.com/video/BV1P44y1N7QG
 
 ​		最高端的食材往往只需要最简单的烹饪方法，搞错了，再来。最初级的bean的加载方式其实可以直击spring管控bean的核心思想，就是提供类名，然后spring就可以管理了。所以第一种方式就是给出bean的类名，至于内部嘛就是反射机制加载成class，然后，就没有然后了，拿到了class你就可以搞定一切了。如果这句话听不太懂，请这些小盆友转战java基础高级部分复习一下反射相关知识。
 
-```XML
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -955,6 +955,7 @@ public class IpCountService {
 ```JAVA
 @Scheduled(cron = "0/#{ipProperties.cycle} * * * * ?")
 public void print(){
+    
 }
 ```
 
@@ -1060,7 +1061,7 @@ public class SpringMvcConfig implements WebMvcConfigurer {
 
 ​		程序编译后，在META-INF目录中会生成对应的提示文件，然后拷贝生成出的文件到自己开发的META-INF目录中，并对其进行编辑。打开生成的文件，可以看到如下信息。其中groups属性定义了当前配置的提示信息总体描述，当前配置属于哪一个属性封装类，properties属性描述了当前配置中每一个属性的具体设置，包含名称、类型、描述、默认值等信息。hints属性默认是空白的，没有进行设置。hints属性可以参考springboot源码中的制作，设置当前属性封装类专用的提示信息，下例中为日志输出模式属性model设置了两种可选提示信息。
 
-```JAVA
+```json
 {
   "groups": [
     {
@@ -1132,7 +1133,7 @@ public class SpringMvcConfig implements WebMvcConfigurer {
 
 ​		以下通过代码流向介绍了springboot程序启动时每一环节做的具体事情。
 
-```JAVA
+```shell
 Springboot30StartupApplication【10】->SpringApplication.run(Springboot30StartupApplication.class, args);
     SpringApplication【1332】->return run(new Class<?>[] { primarySource }, args);
         SpringApplication【1343】->return new SpringApplication(primarySources).run(args);
