@@ -1,4 +1,4 @@
-#1. 面向对象编程有哪些特征？
+# 1. 面向对象编程有哪些特征？
 一、抽象和封装
 
 类和对象体现了抽象和封装
@@ -23,7 +23,7 @@
 
 可扩充性：多态对代码具有可扩充性。增加新的子类不影响已存在类的多态性、继承性，以及其他特性的运行和操作。实际上新加子类更容易获得多态功能
 
-#2. JDK、JRE、JVM 之间有什么关系？
+# 2. JDK、JRE、JVM 之间有什么关系？
 1、JDK
 
 JDK(Java development Toolkit),JDK是整个Java的核心，包括了Java的运行环境（Java Runtime Environment），一堆的Java工具（Javac，java，jdb等）和Java基础的类库（即Java API 包括rt.jar）.
@@ -42,7 +42,7 @@ JVM:Java Virtual Machine（Java 虚拟机）JVM是JRE的一部分，它是虚拟
 
 JVM是Java实现跨平台最核心的部分，所有的Java程序会首先被编译为class的类文件，JVM的主要工作是解释自己的指令集（即字节码）并映射到本地的CPU的指令集或OS的系统调用。Java面对不同操作系统使用不同的虚拟机，一次实现了跨平台。JVM对上层的Java源文件是不关心的，它关心的只是由源文件生成的类文件
 
-#3. 如何使用命令行编译和运行 Java 文件？
+# 3. 如何使用命令行编译和运行 Java 文件？
 编译和运行Java文件，需了解两个命令：
 
 1）javac命令：编译java文件；使用方法: javac Hello.java ，如果不出错的话，在与Hello.java 同一目录下会生成一个Hello.class文件，这个class文件是操作系统能够使用和运行的文件。
@@ -51,26 +51,27 @@ JVM是Java实现跨平台最核心的部分，所有的Java程序会首先被编
 
 新建文件，编写代码如下：
 
-
+```java
 public class Hello{
-public static void main(String[] args){
-System.out.println("Hello world，欢迎关注微信公众号“Java精选”！");
+    public static void main(String[] args){
+        System.out.println("Hello world，欢迎关注微信公众号“Java精选”！");
+    }
 }
-}
+```
 文件命名为Hello.java，注意后缀为“java”。
 
 打开cmd，切换至当前文件所在位置，执行javac Hello.java，该文件夹下面生成了一个Hello.class文件
 
 输入java Hello命令，cmd控制台打印出代码的内容Hello world，欢迎关注微信公众号“Java精选”！
 
-#4. Java 中的关键字都有哪些？
+# 4. Java 中的关键字都有哪些？
 1）48个关键字：abstract、assert、boolean、break、byte、case、catch、char、class、continue、default、do、double、else、enum、extends、final、finally、float、for、if、implements、import、int、interface、instanceof、long、native、new、package、private、protected、public、return、short、static、strictfp、super、switch、synchronized、this、throw、throws、transient、try、void、volatile、while。
 
 2）2个保留字（目前未使用，以后可能用作为关键字）：goto、const。
 
 3）3个特殊直接量（直接量是指在程序中通过源代码直接给出的值）：true、false、null。
 
-#5. Java 中基本类型都有哪些？
+# 5. Java 中基本类型都有哪些？
 Java的类型分成两种，一种是基本类型，一种是引用类型。其中Java基本类型共有八种。
 
 基本类型可以分为三大类：字符类型char，布尔类型boolean以及数值类型byte、short、int、long、float、double。
@@ -97,7 +98,7 @@ boolean：只有true和false两个取值。
 
 char：16位，存储Unicode码，用单引号赋值。
 
-#6. main 方法中 args 参数是什么含义？
+# 6. main 方法中 args 参数是什么含义？
 java中args即为arguments的缩写，是指字符串变量名，属于引用变量，属于命名，可以自定义名称也可以采用默认值，一般习惯性照写。
 
 String[] args是main函数的形式参数，可以用来获取命令行用户输入进去的参数。
@@ -112,7 +113,7 @@ String[] args是main函数的形式参数，可以用来获取命令行用户输
 
 5）java本身不存在不带String args[]的main函数，java程序中去掉String args[]会出现错误。
 
-#7. ​final 关键字的基本用法？
+# 7. final 关键字的基本用法？
 在Java中final关键字可以用来修饰类、方法和变量（包括成员变量和局部变量）。下面从这三个方面来了解一下final关键字的基本用法。
 
 1、修饰类
@@ -139,7 +140,7 @@ final修饰一个成员变量（属性），必须要显示初始化。这里有
 
 当函数的参数类型声明为final时，说明该参数是只读型的。即你可以读取使用该参数，但是无法改变该参数的值。
 
-#8. 如何理解 final 关键字？
+# 8. 如何理解 final 关键字？
 1）类的final变量和普通变量有什么区别？
 
 当用final作用于类的成员变量时，成员变量（注意是类的成员变量，局部变量只需要保证在使用之前被初始化赋值即可）必须在定义时或者构造器中进行初始化赋值，而且final变量一旦被初始化赋值之后，就不能再被赋值了。
@@ -156,7 +157,7 @@ The final local variable i cannot be assigned. It must be blank and not using a 
 
 java采用的是值传递，对于引用变量，传递的是引用的值，也就是说让实参和形参同时指向了同一个对象，因此让形参重新指向另一个对象对实参并没有任何影响。
 
-#9. 为什么 String 类型是被 final 修饰的？
+# 9. 为什么 String 类型是被 final 修饰的？
 1、为了实现字符串池
 
 final修饰符的作用：final可以修饰类，方法和变量，并且被修饰的类或方法，被final修饰的类不能被继承，即它不能拥有自己的子类，被final修饰的方法不能被重写， final修饰的变量，无论是类属性、对象属性、形参还是局部变量，都需要进行初始化操作。
@@ -179,7 +180,7 @@ final修饰的String类型，代表了String不可被继承，final修饰的char
 
 因为字符串是不可变的，所以在它创建的时候HashCode就被缓存了，不需要重新计算。使得字符串很适合作为Map键值对中的键，字符串的处理速度要快过其它的键对象。这就是HashMap中的键往往都使用字符串。
 
-#10. 接口（interface）和抽象类（abstract class）有什么区别？
+# 10. 接口（interface）和抽象类（abstract class）有什么区别？
 默认方法
 
 抽象类可以有默认的方法实现；而接口类在JDK1.8之前版本，不存在方法的实现。
@@ -208,7 +209,7 @@ final修饰的String类型，代表了String不可被继承，final修饰的char
 
 抽象类中添加新方法，可以提供默认的实现，因此可以不修改子类现有的代码；而接口类中添加新方法，则子类中需要实现该方法。
 
-#11. 面向过程与面向对象有什么区别？
+# 11. 面向过程与面向对象有什么区别？
 面向过程
 
 性能相比面向对象高，因其类调用时需要实例化，开销比较大，消耗资源，比如单片机、嵌入式开发、Linux/Unix等一般采用面向过程开发，性能是最重要的因素。
@@ -217,7 +218,7 @@ final修饰的String类型，代表了String不可被继承，final修饰的char
 
 易维护、复用以及扩展，由于面向对象有封装、继承、多态性等特征，可以设计出低耦合、高内聚的系统，使得更加灵活，易于维护。
 
-#12. Java 编程语言有哪些特点？
+# 12. Java 编程语言有哪些特点？
 1）简单易学；
 
 2）面向对象（封装，继承，多态）；
@@ -234,7 +235,7 @@ final修饰的String类型，代表了String不可被继承，final修饰的char
 
 8）编译与解释并存。
 
-#13. 重载和重写有什么区别？
+# 13. 重载和重写有什么区别？
 重载（Overload） 是指让类以统一的方式处理不同类型数据的一种手段，实质表现就是多个具有不同的参数个数或者不同类型的同名函数，存在于同一个类中，返回值类型不同，是一个类中多态性的一种表现。
 
 调用方法时通过传递不同参数个数和参数类型来决定具体使用哪个方法的多态性。
@@ -245,14 +246,14 @@ final修饰的String类型，代表了String不可被继承，final修饰的char
 
 如果子类中的方法与父类中的某一方法具有相同的方法名、返回类型和参数表，则新方法将覆盖原有的方法，如需父类中原有的方法则可使用super关键字。
 
-#14. 静态方法和实例方法有什么不同？
+# 14. 静态方法和实例方法有什么不同？
 静态方法和实例方法的区别主要体现在两个方面：
 
 其一在外部调用静态方法时，可以使用"类名.方法名"的方式，也可以使用"对象名.方法名"的方式而实例方法只能试用后面这种方式。也就是说，调用静态方法可以无需创建对象进行实例化。
 
 其二静态方法在访问本类的成员时，只允许访问静态成员也就是静态成员变量和静态方法，而不允许访问实例成员变量和实例方法，实例方法是没有这个限制的。
 
-#15. == 和 equals 两者有什么区别？
+# 15. == 和 equals 两者有什么区别？
 使用==比较
 
 用于对比基本数据类型的变量，是直接比较存储的 “值”是否相等；
@@ -265,7 +266,7 @@ equals方法不能用于对比基本数据类型的变量；
 
 如果没对Object中equals方法进行重写，则是比较的引用类型变量所指向的对象地址，反之则比较的是内容。
 
-#16. Integer 和 int 两者有什么区别？
+# 16. Integer 和 int 两者有什么区别？
 Integer是int的包装类，默认值是null；int是基本数据类型，默认值是0；
 
 Integer变量必须实例化后才能使用；int变量不需要；
@@ -289,7 +290,7 @@ Integer i2 = Integer.valueOf(128);
 
 4）int和Integer对比不管是否new对象，两者判断都是true，因为会把Integer自动拆箱为int再去比。
 
-#17. 什么是 Java 内部类？
+# 17. 什么是 Java 内部类？
 内部类是指把A类定义在另一个B类的内部。
 
 例如：把类User定义在类Role中，类User就被称为内部类。
@@ -303,21 +304,21 @@ class Role {
 
 1、内部类的访问规则
 
-​1）可以直接访问外部类的成员，包括私有
+- 1）可以直接访问外部类的成员，包括私有
 
-​2）外部类要想访问内部类成员，必须创建对象
+- 2）外部类要想访问内部类成员，必须创建对象
 
 2、内部类的分类
 
-​1）成员内部类
+- 1）成员内部类
 
-​2）局部内部类
+- 2）局部内部类
 
-​3）静态内部类
+- 3）静态内部类
 
-​4）匿名内部类
+- 4）匿名内部类
 
-#18. 什么是自动装箱？什么是自动拆箱？
+# 18. 什么是自动装箱？什么是自动拆箱？
 自动装箱是指将基本数据类型重新转化为对象。
 
 ```java
@@ -350,12 +351,10 @@ Integer num = 10;
 int num1 = num;
 ```
 
-#19. JDK1.8 中 ConcurrentHashMap 不支持空键值吗？
-欢迎大家关注微信公众号： Java精选 ，专注分享前沿资讯，BATJ 大厂面试题解读，架构技术干货，微服务、高可用等架构设计，10年开发老兵帮你少走弯路，欢迎各领域程序员交流学习！
+# 19. JDK1.8 中 ConcurrentHashMap 不支持空键值吗？
+TODO
 
-此类面试题只能在微信小程序： Java精选面试题 ，查阅全部内容，感谢支持！
-
-#20. 父类中静态方法能否被子类重写？
+# 20. 父类中静态方法能否被子类重写？
 父类中静态方法不能被子类重写。
 
 重写只适用于实例方法，不能用于静态方法，而且子类当中含有和父类相同签名的静态方法，一般称之为隐藏。
